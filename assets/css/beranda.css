@@ -1,3 +1,157 @@
-h1 {
-    color: red;
-}
+        /* Warna Tema Kustom */
+        :root {
+            --primary-red: #ff0000;
+            --primary-dark: #1D3557; /* Accent Blue di kode lama */
+            --primary-light: #ffffff;
+            --yellow-accent: #ffea00;
+            --soft-bg: #f4f4f4;
+            --text-dark: #333333;
+        }
+
+        /* Latar Belakang Body Kustom (Mengganti overlay merah di body) */
+        body {
+            /* Ganti dengan path gambar hero.svg yang sebenarnya */
+            background: url('/assets/img/hero.svg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        /* Overlay Merah di Latar Belakang */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 0, 0, 0.65);
+            z-index: -1;
+        }
+
+        /* Navbar Kustom */
+        .navbar-custom {
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .navbar-custom.scrolled {
+            background-color: var(--primary-red) !important;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: var(--primary-light) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 56px; /* Kompensasi tinggi navbar */
+        }
+        .hero h1,
+        .hero p {
+            color: var(--primary-light);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Utility Styles */
+        .btn-custom-yellow {
+            background-color: var(--yellow-accent);
+            color: var(--primary-dark);
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-custom-yellow:hover {
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+        }
+
+        /* Section Styling */
+        .section-padding {
+            padding: 80px 0;
+        }
+        .bg-soft {
+            background-color: var(--soft-bg);
+        }
+
+        /* Keahlian Card */
+        .main-card {
+            border-radius: 0.75rem; /* radius-md */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .main-card:hover {
+            transform: translateY(-8px);
+        }
+        .main-card .image-area img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 992px) {
+            .main-card .image-area img {
+                height: 250px;
+            }
+        }
+
+        /* Layanan Cards */
+        .card-service {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        .card-service .icon {
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: var(--primary-red);
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            border-left: 4px solid var(--primary-red);
+            border-radius: 0.5rem;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+        .testimonial-rating {
+            color: #ffc800;
+        }
+
+        /* FAQ */
+        .accordion-button:not(.collapsed) {
+            color: var(--primary-red);
+            background-color: var(--soft-bg);
+            box-shadow: none;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: transparent;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.0);
+            position: relative;
+        }
+        footer .col-title {
+            color: var(--yellow-accent);
+        }
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: var(--yellow-accent);
+        }

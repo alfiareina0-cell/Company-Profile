@@ -1,25 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <!-- link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/beranda.css">
-</head>
-
+    <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Laboratorium Biosain - Polije</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"    
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link rel="stylesheet" href="/assets/css/beranda.css">
+        </head>
 <body>
-    <!-- navbar -->
-    <div data-include="../partials/navbar.html"></div>
+                <!-- navbar -->
+                <!-- <div data-include="../partials/navbar.html"></div> -->
+            
+                <!-- isi -->
+                <!-- <main class="container" style="margin-top:100px">
+                    <h1>Beranda</h1>
+                </main> -->
+                
+<nav class="navbar navbar-expand-lg bg-transparent navbar-dark sticky-top navbar-custom" id="main-nav">
+    <div class="container-fluid mx-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/Beranda/img/Beranda/logo.svg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <div class="d-flex flex-column">
+                <span class="title fw-bold">Pusat UPA Laboratorium Biosain</span>
+                <small class="subtitle" style="font-size: 0.8em;">Politeknik Negeri Jember</small>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Tentang</a></li>
+                        <li><a class="dropdown-item" href="/Gallery/tentang.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Layanan</a></li>
+                        <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Publikasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <!-- isi -->
-    <main class="container" style="margin-top:100px">
-        <h1>Beranda</h1>
-    </main>
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">PUSAT UPA Lab Biosain</h1>
+        <p class="lead">
+            Selamat datang di laboratorium Biosain, Politeknik Negeri Jember. Saya harap Anda mendapatkan informasi dalam menjelajahi situs web kami mengenai profil lab, layanan, dan menemukan berbagai aspek yang tersedia termasuk informasi kontak laboratorium.
+        </p>
+    </div>
+</header>
+
+<section class="skills section-padding bg-soft">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Keahlian Kami</h2>
+            <p class="text-secondary intro-text mx-auto" style="max-width: 800px;">
+                Dari sampel hingga validasi ilmiah, layanan laboratorium kami bekerja sama untuk memberikan para peneliti, industri, dan produsen kejelasan, keakuratan, dan keyakinan yang mereka butuhkan dalam setiap tahap analisis.
+            </p>
+        </div>
+        
+        <div class="main-card shadow-lg bg-white">
+            <div class="row g-0">
+                <div class="col-lg-8 p-4 p-md-5 content-area">
+                    <h2 class="text-dark">Jasa Analisis</h2>
+                    <p class="text-muted deskripsi-utama fst-italic">Layanan analisis komprehensif yang menyediakan data akurat untuk riset, kontrol kualitas, dan pengembangan produk.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Analisis Kimia</h3>
+                            <p class="text-muted">Pengujian kandungan, residu, dan profil senyawa untuk memastikan instrumen presisi untuk validasi mutu bahan dan produk.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Analisis Mikrobiologi</h3>
+                            <p class="text-muted">Identifikasi dan karakterisasi mikroorganisme untuk mendukung keamanan produk dan kepatuhan terhadap standar kesehatan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 image-area d-none d-lg-block">
+                    <img src="/Beranda/img/Beranda/analisi.svg" alt="Seorang peneliti melakukan analisis di laboratorium" class="img-fluid h-100 w-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-card shadow-lg bg-white">
+            <div class="row g-0 flex-row-reverse">
+                <div class="col-lg-8 p-4 p-md-5 content-area">
+                    <h2 class="text-dark">Laboratorium & Fasilitas</h2>
+                    <p class="text-muted deskripsi-utama fst-italic">Fasilitas laboratorium lengkap dengan peralatan berstandar internasional dan lingkungan terkontrol untuk memastikan hasil uji yang andal.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Instrumen Presisi</h3>
+                            <p class="text-muted">Spektrofotometer, kromatografi, sistem ELISA otomatis, dan mikroskop digital untuk data berkualitas tinggi.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Lingkungan Terkendali</h3>
+                            <p class="text-muted">Ruang bersih, kontrol suhu & kelembaban, serta prosedur kepatuhan untuk menjaga integritas sampel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 image-area d-none d-lg-block">
+                    <img src="/Beranda/img/Beranda/fasilitas.svg" alt="Peralatan laboratorium presisi" class="img-fluid h-100 w-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-card shadow-lg bg-white">
+            <div class="row g-0">
+                <div class="col-lg-8 p-4 p-md-5 content-area">
+                    <h2 class="text-dark">Publikasi Ilmiah</h2>
+                    <p class="text-muted deskripsi-utama fst-italic">
+                        Berbagai hasil riset dan analisis mendalam dari laboratorium biosain telah dipublikasikan. Kami memastikan bahwa setiap data disajikan secara valid dan disusun sesuai standar penerbitan jurnal internasional.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Validasi Data Publikasi</h3>
+                            <p class="text-muted">
+                                Semua hasil uji diverifikasi ulang oleh tim profesional untuk memastikan **keakuratan** dan **kepatuhan** data sebelum dimasukkan ke dalam manuskrip.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h5 text-dark">Penyusunan Manuskrip</h3>
+                            <p class="text-muted">
+                                Konsultasi dan bantuan penyusunan laporan yang terstruktur, termasuk format tabel dan gambar, agar manuskrip Anda **siap diterima** oleh jurnal bereputasi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 image-area d-none d-lg-block">
+                    <img src="/Beranda/img/Beranda/publikasi.svg" alt="Publikasi" class="img-fluid h-100 w-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                <img src="/Beranda/img/Beranda/analisi.svg" alt="Tentang" class="img-fluid rounded shadow-lg" style="max-height: 350px;">
+            </div>
+            <div class="col-lg-6 text-lg-start text-center">
+                <h2 class="text-white fw-bold mb-3">Tentang Laboratorium Biosain</h2>
+                <p class="text-white-50">
+                    Laboratorium Biosain Politeknik Negeri Jember merupakan pusat layanan penelitian dan pengujian ilmiah yang berfokus pada bidang biologi, kimia, dan ilmu terapan lainnya. Dengan fasilitas modern dan tenaga ahli yang berkompeten, laboratorium ini hadir untuk mendukung kegiatan akademik, riset, serta pengembangan inovasi di bidang biosains.
+                </p>
+                <p class="text-white-50">
+                    Kami berkomitmen untuk memberikan hasil yang akurat dan tepat waktu dengan menggunakan teknologi terkini dan metode yang telah terstandarisasi secara internasional.
+                </p>
+                <a href="tentang.html" class="btn btn-custom-yellow mt-3">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layanan section-padding bg-soft">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Layanan Kami</h2>
+            <p class="text-secondary subtitle mx-auto" style="max-width: 800px;">Baik Anda lembaga penelitian, laboratorium yang sedang berkembang, atau produsen skala kecil, layanan pengujian biosain dirancang untuk beradaptasi dengan alur kerja, kapasitas, dan kebutuhan analitis spesifik Anda.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 card-service shadow-sm h-100">
+                    <div class="icon mb-3">🔬</div>
+                    <h3 class="h5 card-title fw-bold">Analisis Biokimia</h3>
+                    <p class="card-text text-muted">Metode ini digunakan untuk mendeteksi dan mengukur antibodi, antigen, protein, dan hormon secara spesifik. Proses pengujian dilakukan dengan teknik imunologi yang sangat sensitif. Hasilnya akurat dan cocok untuk kebutuhan riset maupun diagnostik laboratorium.</p>
+                    <a href="#" class="btn btn-sm btn-custom-yellow mt-auto align-self-start">Selengkapnya</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 card-service shadow-sm h-100">
+                    <div class="icon mb-3">🧬</div>
+                    <h3 class="h5 card-title fw-bold">Pengujian Mikrobiologi</h3>
+                    <p class="card-text text-muted">Pengujian ini bertujuan mengidentifikasi mikroorganisme pada sampel secara tepat. Proses dilakukan dengan kultur, pewarnaan, dan metode laboratorium lainnya. Layanan ini penting untuk memastikan keamanan, mutu, dan standar produk.</p>
+                    <a href="#" class="btn btn-sm btn-custom-yellow mt-auto align-self-start">Selengkapnya</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 card-service shadow-sm h-100">
+                    <div class="icon mb-3">🧪</div>
+                    <h3 class="h5 card-title fw-bold">Konsultasi riset</h3>
+                    <p class="card-text text-muted">Pengujian kimia dilakukan untuk mengetahui kandungan, kemurnian, serta karakteristik suatu bahan. Proses analisis menggunakan instrumen laboratorium modern agar hasil lebih presisi. Layanan ini mendukung kebutuhan industri, penelitian, dan kontrol kualitas.</p>
+                    <a href="#" class="btn btn-sm btn-custom-yellow mt-auto align-self-start">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="facilities-section section-padding bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Fasilitas Modern</h2>
+            <p class="text-secondary subtitle">
+                Dilengkapi dengan peralatan laboratorium terkini untuk hasil testing yang optimal
+            </p>
+        </div>
+
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card facility-card shadow-sm h-100">
+                    <img src="/Beranda/img/Beranda/fasilitas.svg" alt="Peralatan Laboratorium" class="card-img-top facility-image" style="height: 250px; object-fit: cover;">
+                    <h3 class="h5 fw-bold text-primary p-3 mb-0">Peralatan Canggih</h3>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card facility-card shadow-sm h-100">
+                    <img src="/Beranda/img/Beranda/fasilitas.svg" alt="Ruang Testing" class="card-img-top facility-image" style="height: 250px; object-fit: cover;">
+                    <h3 class="h5 fw-bold text-primary p-3 mb-0">Ruang Testing Steril</h3>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card facility-card shadow-sm h-100">
+                    <img src="/Beranda/img/Beranda/fasilitas.svg" alt="Laboratorium Mikrobiologi" class="card-img-top facility-image" style="height: 250px; object-fit: cover;">
+                    <h3 class="h5 fw-bold text-primary p-3 mb-0">Lab Mikrobiologi</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="fasilitas.html" class="btn btn-custom-yellow btn-lg">Lihat Semua Fasilitas</a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section section-padding pt-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Pertanyaan Umum</h2>
+        
+        <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
+            
+            <div class="accordion-item shadow-sm mb-3 rounded-3">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
+                        Apa itu laboratoium biosain?
+                    </button>
+                </h3>
+                <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Lab Biosain adalah laboratorium yang digunakan untuk kegiatan penelitian, praktikum, dan pengembangan ilmu biologi serta sains terkait. Di dalamnya tersedia fasilitas untuk eksperimen mikrobiologi, bioteknologi, genetika, dan ekologi.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item shadow-sm mb-3 rounded-3">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                        Siapa saja yang bisa menggunakan Lab Biosain?
+                    </button>
+                </h3>
+                <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Lab ini dapat digunakan oleh mahasiswa, dosen, dan peneliti yang memiliki kepentingan akademik atau riset. Penggunaan biasanya harus melalui prosedur peminjaman atau jadwal resmi yang ditetapkan oleh pengelola laboratorium.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item shadow-sm mb-3 rounded-3">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                        Apa saja aturan keselamatan di Lab Biosain?
+                    </button>
+                </h3>
+                <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        <ul>
+                            <li>Wajib menggunakan alat pelindung diri (jas lab, sarung tangan, masker).</li>
+                            <li>Tidak diperbolehkan makan atau minum di dalam laboratorium.</li>
+                            <li>Semua bahan kimia dan biologi harus ditangani sesuai SOP.</li>
+                            <li>Peralatan harus dikembalikan dalam kondisi bersih dan rapi setelah digunakan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section section-padding bg-soft">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Testimoni Klien</h2>
+            <p class="text-secondary subtitle">
+                Kepuasan klien adalah prioritas utama kami. Berikut adalah apa yang mereka katakan tentang layanan kami
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 testimonial-card shadow-sm">
+                    <div class="testimonial-rating mb-2">★★★★★</div>
+                    <p class="testimonial-text fst-italic text-muted">
+                        "Laboratorium Biosain telah menjadi mitra terpercaya kami selama 5 tahun. Hasil testing yang akurat dan layanan customer service yang responsif membuat kami percaya untuk terus bermitra dengan mereka."
+                    </p>
+                    <div class="testimonial-author mt-auto pt-3">
+                        <h4 class="h6 fw-bold mb-0">Dr. Agus Suryanto</h4>
+                        <p class="small text-muted mb-0">Kepala Riset, Universitas Terpadu</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 testimonial-card shadow-sm">
+                    <div class="testimonial-rating mb-2">★★★★★</div>
+                    <p class="testimonial-text fst-italic text-muted">
+                        "Fasilitas modern dan tim profesional Biosain memberikan hasil yang luar biasa akurat. Kami sangat puas dengan kecepatan penyelesaian testing dan laporan yang detail."
+                    </p>
+                    <div class="testimonial-author mt-auto pt-3">
+                        <h4 class="h6 fw-bold mb-0">Ir. Budi Hartono</h4>
+                        <p class="small text-muted mb-0">Manager Produksi, PT Makanan Berkualitas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 testimonial-card shadow-sm">
+                    <div class="testimonial-rating mb-2">★★★★★</div>
+                    <p class="testimonial-text fst-italic text-muted">
+                        "Layanan testing air dari Biosain sangat membantu kami dalam memastikan kualitas air untuk proses produksi. Harga kompetitif dengan kualitas terjamin."
+                    </p>
+                    <div class="testimonial-author mt-auto pt-3">
+                        <h4 class="h6 fw-bold mb-0">Siti Nurhaliza</h4>
+                        <p class="small text-muted mb-0">Direktur Operasional, PT Maju Jaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pt-5 pb-4">
+    <div class="container text-white">
+        <div class="row g-4">
+            
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="/Beranda/img/Beranda/logo.svg" alt="Logo UPA Lab Biosain" width="50" height="50" class="me-2"> 
+                    <div class="brand-footer">
+                        <span class="title-footer fw-bold d-block">Pusat UPA Laboratorium Biosain</span>
+                        <span class="subtitle-footer small opacity-75">Politeknik Negeri Jember</span>
+                    </div>
+                </div>
+                
+                <address class="contact-info small opacity-75 mb-3">
+                    Jl. Mastrip No.164, Lingkungan Panji, Tegalgede, Kec. <br>
+                    Sumbersari, Kabupaten Jember, Jawa Timur 68121
+                </address>
+
+                <div class="contact-details small opacity-75">
+                    <p class="mb-1">Telephone: +62 341 571708</p>
+                    <p class="mb-1">Fax: +62 341 586415</p>
+                    <p class="mb-1">Email: biosain@polije.ac.id</p>
+                    <p class="mb-1">Whatsapp: +62 821 4290 1215</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <h3 class="col-title fs-5 mb-3">Tentang Lab</h3>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-1"><a href="#">Sejarah</a></li>
+                    <li class="mb-1"><a href="#">Visi Misi</a></li>
+                    <li class="mb-1"><a href="#">Layanan</a></li>
+                    <li class="mb-1"><a href="#">Fasilitas & Lab</a></li>
+                    <li class="mb-1"><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="col-title fs-5 mb-3">Kritik & Saran</h3>
+                <p class="small opacity-75">
+                    "Jika ada pesan, kesan, kritik dan saran atau ada artikel yang kurang layak dipublikasikan, silakan hubungi kami melalui kontak form email kami."
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const nav = document.getElementById('main-nav');
+        
+        // Fungsi untuk menambahkan kelas 'scrolled'
+        function checkScroll() {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        }
+
+        // Jalankan fungsi saat load dan scroll
+        checkScroll();
+        window.addEventListener('scroll', checkScroll);
+    });
+</script>
+
+</body>
+</html>
     <!-- footer -->
-    <div data-include="../partials/footer.html"></div>
+    <!-- <div data-include="../partials/footer.html"></div> -->
 
     <!-- Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
