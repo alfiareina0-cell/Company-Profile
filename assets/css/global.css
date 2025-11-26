@@ -8,28 +8,33 @@
             --text-dark: #333333;
         }
 
-        /* Latar Belakang Body Kustom (Mengganti overlay merah di body) */
-        body {
-            /* Ganti dengan path gambar hero.svg yang sebenarnya */
-            background: url('/assets/img/hero.svg') center center no-repeat fixed;
-            background-size: cover;
-         
-        }
-
-        /* Overlay Merah di Latar Belakang */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: rgba(255, 0, 0, 0.30);
-            z-index: -1;
-        }
-
         /* Navbar Kustom */
     /* Dropdown menu merah */
+.navbar-custom {
+    background-color: var(--primary-red) !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Saat scroll */
+.navbar-custom.scrolled {
+    background-color: var(--primary-dark) !important; /* warna gelapnya */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Teks Navbar */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: var(--primary-light) !important;
+}
+
+/* Hover kuning */
+.navbar-custom .nav-link:hover {
+    color: var(--yellow-accent) !important;
+}
+
+/* Dropdown */
 .navbar-custom .dropdown-menu {
     --bs-dropdown-bg: var(--primary-red) !important;
-    --bs-dropdown-border-color: transparent !important;
 }
 
 .navbar-custom .dropdown-item {
@@ -37,20 +42,13 @@
 }
 
 .navbar-custom .dropdown-item:hover {
-    background: var(--primary-red) !important ;
+    background: var(--primary-dark) !important;
     color: var(--yellow-accent) !important;
 }
-        .navbar-custom.scrolled {
-            background-color: var(--primary-red) !important;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-        }
-        .navbar-custom .nav-link,
-        .navbar-custom .navbar-brand {
-            color: var(--primary-light) !important;
-        }
-.navbar-custom .navbar-nav .nav-link:hover,
-.navbar-custom .navbar-nav .nav-link:focus {
-    color: var(--yellow-accent) !important;
+
+/* Icon hamburger putih */
+.navbar-custom .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
 }
         /* Hero Section */
         .hero {
