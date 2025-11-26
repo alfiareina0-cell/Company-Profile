@@ -109,6 +109,42 @@
                 height: 250px;
             }
         }
+    
+.stats-section {
+    position: relative;
+    background-image: url('img/lab-biosain-bg.jpg'); /* ganti dengan gambar background lab */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.stats-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(174, 0, 0, 0.6); /* biru gelap transparan */
+    backdrop-filter: blur(2px);
+}
+
+.stats-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+
+.stat-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
 
         /* Layanan Cards */
         .card-service {
